@@ -1,0 +1,47 @@
+{
+    "cart":[
+
+    ],
+    "products":[
+        {   
+            "id": 0,
+            "name":"Nike Air Force 1", 
+            "colors":["white","black"], 
+            "price":115, 
+            "quantity":10,
+            "userQuantity":0,
+            "image": "https://data.whicdn.com/images/334155225/original.jpg"},
+        {   
+            "id": 1,
+            "name":"Vans Classic", 
+            "colors":["white","black"], 
+            "price":65, 
+            "quantity":10,
+            "userQuantity":0,
+            "image": "https://images.vans.com/is/image/Vans/D3HY28-HERO?$583x583$"},
+        {   
+            "id": 2,
+            "name":"Balenciaga Uglies", 
+            "colors":["white","black"], 
+            "price":690, 
+            "quantity":10,
+            "userQuantity":0,
+            "image": "https://images.neimanmarcus.com/ca/7/product_assets/N/5/G/M/G/NMN5GMG_mz.jpg"},
+        {   
+            "id": 3,
+            "name":"Vans Sk8 Hi", 
+            "colors":["red","black"], 
+            "price":70, 
+            "quantity":10,
+            "userQuantity":0,
+            "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT-PC2Xj7FxdWNnEgsBYz3TvPQRu31a3w_yipwjsbyB5l2kn8ywEG_JKj9_rfPDoojQ2d97yi3hwg8mcuXqtirxwnpoGysOwQ&usqp=CAY"},
+        {   
+            "id": 4,
+            "name":"Yeezys", 
+            "colors":["white","black"], 
+            "price":400, 
+            "quantity":10,
+            "userQuantity":0,
+            "image":"https://stockx-360.imgix.net/Adidas-Yeezy-Boost-350-V2-Zebra/Images/Adidas-Yeezy-Boost-350-V2-Zebra/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1578503931&w=1000"}
+    ]
+}
