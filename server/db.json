@@ -10,7 +10,8 @@
             "price":115, 
             "quantity":10,
             "userQuantity":0,
-            "image": "https://data.whicdn.com/images/334155225/original.jpg"},
+            "image": "https://data.whicdn.com/images/334155225/original.jpg"
+        },
         {   
             "id": 1,
             "name":"Vans Classic", 
@@ -18,15 +19,17 @@
             "price":65, 
             "quantity":10,
             "userQuantity":0,
-            "image": "https://images.vans.com/is/image/Vans/D3HY28-HERO?$583x583$"},
+            "image": "https://images.vans.com/is/image/Vans/D3HY28-HERO?$583x583$"
+        },
         {   
             "id": 2,
-            "name":"Balenciaga Uglies", 
+            "name":"Balenciaga Triple S Mesh & Leather Sneakers", 
             "colors":["white","black"], 
-            "price":690, 
+            "price": 975, 
             "quantity":10,
             "userQuantity":0,
-            "image": "https://images.neimanmarcus.com/ca/7/product_assets/N/5/G/M/G/NMN5GMG_mz.jpg"},
+            "image": "https://images.neimanmarcus.com/ca/7/product_assets/N/5/G/M/G/NMN5GMG_mz.jpg"
+        },
         {   
             "id": 3,
             "name":"Vans Sk8 Hi", 
@@ -34,7 +37,8 @@
             "price":70, 
             "quantity":10,
             "userQuantity":0,
-            "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT-PC2Xj7FxdWNnEgsBYz3TvPQRu31a3w_yipwjsbyB5l2kn8ywEG_JKj9_rfPDoojQ2d97yi3hwg8mcuXqtirxwnpoGysOwQ&usqp=CAY"},
+            "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT-PC2Xj7FxdWNnEgsBYz3TvPQRu31a3w_yipwjsbyB5l2kn8ywEG_JKj9_rfPDoojQ2d97yi3hwg8mcuXqtirxwnpoGysOwQ&usqp=CAY"
+        },
         {   
             "id": 4,
             "name":"Yeezys", 
@@ -42,6 +46,43 @@
             "price":400, 
             "quantity":10,
             "userQuantity":0,
-            "image":"https://stockx-360.imgix.net/Adidas-Yeezy-Boost-350-V2-Zebra/Images/Adidas-Yeezy-Boost-350-V2-Zebra/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1578503931&w=1000"}
+            "image":"https://stockx-360.imgix.net/Adidas-Yeezy-Boost-350-V2-Zebra/Images/Adidas-Yeezy-Boost-350-V2-Zebra/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1578503931&w=1000"
+        },
+        {   
+            "id": 5,
+            "name":"Nike Air Force 1 Low Tavis Scott Cactus Jack", 
+            "colors":["white","black"], 
+            "price":500, 
+            "quantity":10,
+            "userQuantity":0,
+            "image": "https://stockx-360.imgix.net/Nike-Air-Force-1-Low-Travis-Scott-Cactus-Jack/Images/Nike-Air-Force-1-Low-Travis-Scott-Cactus-Jack/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1573661380&w=1000"
+        },
+        {   
+            "id": 6,
+            "name":"Air Jordan 4 Retro OG", 
+            "colors":["white","black"], 
+            "price":200, 
+            "quantity":10,
+            "userQuantity":0,
+            "image": "https://cdn.flightclub.com/1800/TEMPLATE/139813/1.jpg"
+        },
+        {   
+            "id": 7,
+            "name":"Adidas Superstars", 
+            "colors":["white","black"], 
+            "price":80, 
+            "quantity":10,
+            "userQuantity":0,
+            "image": "https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto:sensitive,fl_lossy/7ed0855435194229a525aad6009a0497_9366/Superstar_Shoes_White_EG4958_01_standard.jpg"
+        },
+        {   
+            "id": 8,
+            "name":"Puma Fenty Creepers", 
+            "colors":["white","black"], 
+            "price":60, 
+            "quantity":10,
+            "userQuantity":0,
+            "image": "https://api.bazaarvoice.com/curations/c3/imagingAPI?passkey=kuuqd395w5u7gv43987gxshh&url=https%3A%2F%2Fscontent-iad3-1.cdninstagram.com%2Fv%2Ft51.2885-15%2Fe35%2Fs1080x1080%2F83300182_482516465990983_6434639622898851523_n.jpg&media_type=photo&permalink_url=https%3A%2F%2Fwww.instagram.com%2Fp%2FB8WuGWDlS-k%2F&client=dsw-2&contentId=5e40471a4e1269230878e12d&width=540&height=540"
+        }
     ]
 }

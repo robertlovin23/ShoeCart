@@ -28,15 +28,20 @@ class ProductShow extends React.Component{
             )
         } else {
             return(
-                <div key={singleItem.id}>
-                    {singleItem.name}
-                    <br/>
-                    {singleItem.price}
-                    <div>
-                        <div onClick={() => this.addProduct(singleItem.id)}className="ui primary button">
-                            Add to Cart
+                <div key={singleItem.id} className="row">
+                    <div className="eight wide column">
+                        <img src={singleItem.image}  style={{width:"100%"}}/>
+                    </div>
+                    <div className="eight wide column">
+                            <h3>{singleItem.name}</h3>
+                            <h1> $ {singleItem.price}</h1>
+                        <div>
+                            <div onClick={() => this.addProduct(singleItem.id)} className="ui primary button">
+                                Add to Cart
+                            </div>
                         </div>
                     </div>
+
                 </div>
             )
         }
@@ -44,7 +49,9 @@ class ProductShow extends React.Component{
     render(){
         console.log(this.props.cart)
         return(
-            <div>{this.renderProduct()}</div>
+            <div className="ui grid">
+                {this.renderProduct()}
+            </div>
         )
     }
 }

@@ -4,8 +4,57 @@ import { Link } from 'react-router-dom'
 import {listProducts} from '../../actions'
 
 class ProductList extends React.Component{
+    constructor(){
+        super()
+        this.state={
+            value: "Select"
+        }
+    }
+
     componentDidMount(){
         this.props.listProducts();
+        this.setState({
+            value: "Select"
+        })
+    }
+
+    onDropChange = (event) => {
+        this.setState({
+            value: event.target.value
+        })
+    }
+
+    filterLowPrice(){
+        const { products } = this.props
+        products.sort((a,b) => {
+            return b.price - a.price
+        })
+        console.log(products)
+        this.setState({
+            value: "Highest"
+        })
+    }
+
+    filterHighPrice(){
+        const { products } = this.props
+        products.sort((a,b) => {
+            return a.price - b.price
+        })
+        console.log(products)
+        this.setState({
+            value: "Lowest"
+        })
+    }
+
+    changeValue = (event) => {
+        console.log(event.target.value)
+        if(this.state.value === "Highest"){
+            this.filterLowPrice();
+        } else if (this.state.value === "Lowest"){
+            this.filterHighPrice();
+        } else if(this.state.value === "Select"){
+            this.componentDidMount();
+        }
     }
 
     renderItems(){
@@ -27,7 +76,7 @@ class ProductList extends React.Component{
                                 <span className="right floated">
                                     $ {product.price}
                                 </span>
-                                {product.name}
+                                <b>{product.name}</b>
                             </div>
                             <div className="extra content">
                                 <Link to={`product/${product.id}`} className="ui button primary">
@@ -35,18 +84,24 @@ class ProductList extends React.Component{
                                 </Link>
                             </div>
                         </div>
- 
                     </div>
                 )
             })
         }
     }
     render(){
-
         return(
+        <div>
+            <select class="ui search dropdown" onClick={(e) => this.changeValue(e)} onChange={(e) => this.onDropChange(e)} value={this.state.value} style={{marginBottom:"15px"}}>
+                <option class="item" value="Select">Select</option>
+                <option class="item" value="Highest">High Price First</option>
+                <option class="item" value="Lowest">Low Price First</option>
+            </select>
+            {/* {this.filterPrice()} */}
             <div className="ui stackable four column grid">
                 {this.renderItems()}
             </div>
+        </div>
 
         )
     }

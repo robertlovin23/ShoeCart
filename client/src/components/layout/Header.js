@@ -10,9 +10,20 @@ class Header extends React.Component{
             return cartItem.userQuantity
          })
         const quantity = total.reduce((a,b) => a + b, 0)
-            return quantity
+        if(!this.props.cart.length){
+            return(
+                <div></div>
+            );
+        } else {
+            return(
+                <div>
+                    ({quantity})
+                </div>
+            ) 
+        }
     }
     render(){
+        console.log(this.props.cart)
         return(
             <div className="ui pointing menu">
                 <Link to="/" className="item">
@@ -24,7 +35,7 @@ class Header extends React.Component{
                     </Link>
                     <Link to="/cart" className="item">
                         <i class="shopping cart icon"></i>
-                        ({this.renderCartLength()})
+                        {this.renderCartLength()}
                     </Link>
                 </div>
             </div>

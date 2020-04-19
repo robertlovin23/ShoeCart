@@ -5,6 +5,7 @@ import StripeCheckout from 'react-stripe-checkout'
 import { showCart, listProducts, removeProduct, addProduct, subtractQuantity } from '../../actions'
 
 class ProductCart extends React.Component{
+
     componentDidMount(){
         this.props.showCart();
         this.props.listProducts();
@@ -20,6 +21,7 @@ class ProductCart extends React.Component{
             })
         })
     }
+     
     removeCart = (id) => {
         return this.props.cart.map(cartItem => {
             if(id === cartItem.id){
@@ -56,18 +58,17 @@ class ProductCart extends React.Component{
                 <div className="item" key={cartItems.id}>
                     <img className="ui image" src={cartItems.image} style={{width:"310px"}}/>
                     <div style={{display:"block", marginTop:"10px"}}>
-                        <div className="header">
-                            <b>{cartItems.name}</b>
+                        <div className="header" style={{marginBottom:"10px"}}>
+                            <h4>{cartItems.name}</h4>
                         </div>
-
                         Quantity: {cartItems.userQuantity}
                     </div>
                     <div style={{marginTop:"10px"}}>
-                        <div className="ui button primary" onClick={() => this.addToCart(cartItems.id,cartItems)}>
-                            Add More to Cart
+                        <div className="ui button primary" onClick={() => this.addToCart(cartItems.id)}>
+                            Add More
                         </div>
                         <div className="ui button red" onClick={() => this.removeCart(cartItems.id)}>
-                            Remove from Cart
+                            Remove
                         </div>
                     </div>
                 </div>
